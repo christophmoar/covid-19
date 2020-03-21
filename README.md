@@ -3,7 +3,7 @@
 [![GitHub commit](https://img.shields.io/github/last-commit/christophmoar/covid-19)](https://github.com/christophmoar/covid-19/commits/master)
 
 # charts
-* Fullscreen chart (https://datawrapper.dwcdn.net/njNtn/3/)
+* Fullscreen chart (https://datawrapper.dwcdn.net/njNtn/)
 * Normal size chart (https://www.datawrapper.de/_/njNtn/)
 
 # current chart snapshot
