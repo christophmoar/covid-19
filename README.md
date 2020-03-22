@@ -17,3 +17,14 @@
 * Current dataset (https://github.com/christophmoar/covid-19/blob/master/dataset-01/covid19-normalized.CSV)
 * Current dataset without date index and population headers (https://github.com/christophmoar/covid-19/blob/master/dataset-01/covid19-normalized-noheader.CSV)
 
+## dataset description
+column name | description
+----------- | -------------
+n|new cases
+t|total cases
+nx|new cases, normalized to population=60.3m
+tx|total cases, normalized to population=60.3m
+q|growth rate: q=1+p/100
+td|doubling time in days: td=ln(2)/ln(q)
+
+To smooth out  single day spikes in testing and case numbers, we use a three-day rolling average for q in the doubling time computation.
