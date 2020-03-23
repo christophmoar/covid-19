@@ -9,7 +9,7 @@
 * Normal size covid-19 normalized chart (https://www.datawrapper.de/_/njNtn/)
 * Normal size covid-19 doubling time chart (https://www.datawrapper.de/_/Zojai/)
 
-# chart snapshopts
+# chart snapshots
 ![Current covid-19 normalized](https://github.com/christophmoar/covid-19/blob/master/image/njNtn-covid-19-normalized.png?raw=true)
 ![Current covid-19 doubling time](https://github.com/christophmoar/covid-19/blob/master/image/Zojai-covid-19-doubling-time.png?raw=true)
 
