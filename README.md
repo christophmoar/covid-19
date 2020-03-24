@@ -27,4 +27,4 @@ tx|total cases, normalized to population=60.3m
 q|growth rate: q=1+p/100
 td|doubling time in days: td=ln(2)/ln(q)
 
-To smooth out  single day spikes in testing and case numbers, we use a three-day rolling average for q in the doubling time computation.
+To smooth out  single day spikes in testing and case numbers, we currently use a five-day logarithmic average for q in the doubling time computation.
