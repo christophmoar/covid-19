@@ -23,6 +23,17 @@ async function update(url, filename) {
 }
 
 async function timestamp(url, text) {
+  const timeStamp = new Date().toLocaleString('de-DE', {
+        timeZone: 'Europe/Berlin',
+        hour12: false,
+        year: "numeric",
+        month: "2-digit",
+        day: "2-digit",
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit",
+    }).replace(/(\d+).(\d+).(\d+),\s(\d+):(\d+):(\d+)/, "$3-$1-$2, $4:$5:$6");
+  
   const dataResponse = await request(
     url, {
       method: 'PATCH',
@@ -33,7 +44,7 @@ async function timestamp(url, text) {
       body: {
         metadata: {
           annotate: {
-            notes: `Last update: ${new Date().toLocaleString()}. ${text}`
+            notes: `Last update: ${timeStamp}. ${text}`
           }
         }
       }
