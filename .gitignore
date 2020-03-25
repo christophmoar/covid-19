@@ -10,8 +10,6 @@
 *.zip
 *.xlsx
 *.xls
-*.cmd
-*.js
 *~
 
 # OS or Editor folders
