@@ -3,7 +3,7 @@ const got = require('got')
 const fs = require('fs')
 const request = require('request')
 
-const text1 = 'Start date for each country has been chosen so that each country starts with a similar group of base cases. This makes evolution of the graph comparable. For chosen dates have a look at the dataset, IT/2020-02-22, DE/2020-03-01, ES/2020-02-29, IE/2020-03-04, KR/2020-02-19, UK/2020-03-01, SE/2020-02-27, ST/2020-02-27, AT/2020-02-29.'
+const text1 = 'Start date for each country has been chosen so that each country starts with a similar group of base cases. This makes evolution of the graph comparable. For chosen dates have a look at the dataset, IT/2020-02-22, DE/2020-03-01, ES/2020-02-29, IE/2020-03-04, KR/2020-02-19, UK/2020-03-01, SE/2020-02-27, ST/2020-02-27, AT/2020-02-29, CH/2020-02-27, US/2020-03-07.'
 const text2 = 'Please also note that comparing total recorded case numbers might be misleading, since they do not account for unreported/undetected cases (dark numbers). This factor is likely different in each country, due to the different testing policies. Comparing slope changes - and not total figures - is the main point in this chart.'
 
 const DW_TOKEN = process.env.DW_TOKEN
