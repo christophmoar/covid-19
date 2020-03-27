@@ -8,6 +8,12 @@ const text2 = 'Please also note that comparing total recorded case numbers might
 
 const DW_TOKEN = process.env.DW_TOKEN
 
+async function updateurl(url, sourceurl, tmpfilename) {
+  download(sourceurl, tmpfilename)
+  update(url, tmpfilename)    
+  fs.unlinkSync(tmpfilename)
+}
+
 async function update(url, filename) {
   const data = fs.readFileSync(filename, 'ascii')
   const dataResponse = await request(
@@ -80,15 +86,19 @@ function main() {
 
   update('https://api.datawrapper.de/v3/charts/njNtn/data', '../dataset-01/covid19-normalized-noheader.CSV')
   update('https://api.datawrapper.de/v3/charts/Zojai/data', '../dataset-01/covid19-normalized-noheader.CSV')
+  updateurl('https://api.datawrapper.de/v3/charts/HWIBU/data', 'https://github.com/abaumg/covid19-bz-scraper/raw/master/data/covid19_bz.csv', '../dataset-01/covid19_bz.csv')
   
   timestamp('https://api.datawrapper.de/v3/charts/njNtn', `${text1} ${text2}`)
   timestamp('https://api.datawrapper.de/v3/charts/Zojai', `${text1}`)
+  timestamp('https://api.datawrapper.de/v3/charts/HWIBU', '')
   
   publish('https://api.datawrapper.de/charts/njNtn/publish')
   publish('https://api.datawrapper.de/charts/Zojai/publish')
+  publish('https://api.datawrapper.de/charts/HWIBU/publish')
   
   download('https://api.datawrapper.de/v3/charts/njNtn/export/png?unit=px&mode=rgb&plain=false&scale=2&borderWidth=40', '../image/njNtn-covid-19-normalized.png')
   download('https://api.datawrapper.de/v3/charts/Zojai/export/png?unit=px&mode=rgb&plain=false&scale=2&borderWidth=40', '../image/Zojai-covid-19-doubling-time.png')
+  download('https://api.datawrapper.de/v3/charts/HWIBU/export/png?unit=px&mode=rgb&plain=false&scale=2&borderWidth=40', '../image/HWIBU-covid-19-s-dtirol.png')
 }
 
 main()
