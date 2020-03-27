@@ -11,7 +11,7 @@ const DW_TOKEN = process.env.DW_TOKEN
 async function updateurl(url, sourceurl, tmpfilename) {
   download(sourceurl, tmpfilename)
   update(url, tmpfilename)    
-  fs.unlinkSync(tmpfilename)
+  //fs.unlinkSync(tmpfilename)
 }
 
 async function update(url, filename) {
