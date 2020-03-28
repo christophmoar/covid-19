@@ -31,4 +31,4 @@ tx|total cases, normalized to population=60.3m
 q|daily growth rate: q=1+p/100
 td|doubling time in days: td=ln(2)/ln(q)
 
-To smooth out  single day spikes in testing and case numbers, we currently use a six-day averaging of the daily growth ratea in the doubling time computation.
+To smooth out  single day spikes in testing and case numbers, we currently use a six-day averaging of the daily growth rate in the doubling time computation.
