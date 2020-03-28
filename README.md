@@ -3,18 +3,24 @@
 [![GitHub commit](https://img.shields.io/github/last-commit/christophmoar/covid-19)](https://github.com/christophmoar/covid-19/commits/master)
 
 # charts
-* Fullscreen covid-19 normalized chart (https://datawrapper.dwcdn.net/njNtn/)
-* Fullscreen covid-19 doubling time chart (https://datawrapper.dwcdn.net/Zojai/)
-* Fullscreen covid-19 südtirol chart (https://datawrapper.dwcdn.net/HWIBU/)
+## normalized averaged timeseries
+* Fullscreen (https://datawrapper.dwcdn.net/4sti7/)
+* Normal size (https://www.datawrapper.de/_/4sti7/)
+![Current covid-19 normalized averaged timeseries](https://github.com/christophmoar/covid-19/blob/master/image/4sti7-covid-19-normalized-averaged-timeseries.png?raw=true)
 
-* Normal size covid-19 normalized chart (https://www.datawrapper.de/_/njNtn/)
-* Normal size covid-19 doubling time chart (https://www.datawrapper.de/_/Zojai/)
-* Normal size covid-19 südtirol chart (https://www.datawrapper.de/_/HWIBU/)
-
-# chart snapshots
-![Current covid-19 normalized averaged timeseries](https://github.com/christophmoar/covid-19/blob/master/image/4sti7-covid-19-normalized-averaged-timeseries?raw=true)
+## normalized total cases
+* Fullscreen (https://datawrapper.dwcdn.net/njNtn/)
+* Normal (https://www.datawrapper.de/_/njNtn/)
 ![Current covid-19 normalized](https://github.com/christophmoar/covid-19/blob/master/image/njNtn-covid-19-normalized.png?raw=true)
+
+## doubling time
+* Fullscreen (https://datawrapper.dwcdn.net/Zojai/)
+* Normal size (https://www.datawrapper.de/_/Zojai/)
 ![Current covid-19 doubling time](https://github.com/christophmoar/covid-19/blob/master/image/Zojai-covid-19-doubling-time.png?raw=true)
+
+## südtirol data
+* Fullscreen (https://datawrapper.dwcdn.net/HWIBU/)
+* Normal size (https://www.datawrapper.de/_/HWIBU/)
 ![Current covid-19 südtirol](https://github.com/christophmoar/covid-19/blob/master/image/HWIBU-covid-19-s-dtirol.png?raw=true)
 
 # datasets
