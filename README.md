@@ -5,21 +5,21 @@
 # charts
 * Fullscreen covid-19 normalized chart (https://datawrapper.dwcdn.net/njNtn/)
 * Fullscreen covid-19 doubling time chart (https://datawrapper.dwcdn.net/Zojai/)
-* Fullscreen covid-19 südtirol chart (https://datawrapper.dwcdn.net/HWIBU/)
+* Fullscreen covid-19 sÃ¼dtirol chart (https://datawrapper.dwcdn.net/HWIBU/)
 
 * Normal size covid-19 normalized chart (https://www.datawrapper.de/_/njNtn/)
 * Normal size covid-19 doubling time chart (https://www.datawrapper.de/_/Zojai/)
-* Normal size covid-19 südtirol chart (https://www.datawrapper.de/_/HWIBU/)
+* Normal size covid-19 sÃ¼dtirol chart (https://www.datawrapper.de/_/HWIBU/)
 
 # chart snapshots
 ![Current covid-19 normalized](https://github.com/christophmoar/covid-19/blob/master/image/njNtn-covid-19-normalized.png?raw=true)
 ![Current covid-19 doubling time](https://github.com/christophmoar/covid-19/blob/master/image/Zojai-covid-19-doubling-time.png?raw=true)
-![Current covid-19 südtirol](https://github.com/christophmoar/covid-19/blob/master/image/HWIBU-covid-19-s-dtirol.png?raw=true)
+![Current covid-19 sÃ¼dtirol](https://github.com/christophmoar/covid-19/blob/master/image/HWIBU-covid-19-s-dtirol.png?raw=true)
 
 # datasets
 * Current dataset (https://github.com/christophmoar/covid-19/blob/master/dataset-01/covid19-normalized.CSV)
 * Current dataset without date index and population headers (https://github.com/christophmoar/covid-19/blob/master/dataset-01/covid19-normalized-noheader.CSV)
-* Current südtirol dataset  (https://github.com/abaumg/covid19-bz-scraper/blob/master/data/covid19_bz.csv)
+* Current sÃ¼dtirol dataset  (https://github.com/abaumg/covid19-bz-scraper/blob/master/data/covid19_bz.csv)
 
 ## dataset description
 column name | description
@@ -28,7 +28,7 @@ n|new cases
 t|total cases
 nx|new cases, normalized to population=60.3m
 tx|total cases, normalized to population=60.3m
-q|growth rate: q=1+p/100
+q|daily growth rate: q=1+p/100
 td|doubling time in days: td=ln(2)/ln(q)
 
-To smooth out  single day spikes in testing and case numbers, we currently use a five-day logarithmic average for q in the doubling time computation.
+To smooth out  single day spikes in testing and case numbers, we currently use a six-day averaging of the daily growth rate in the doubling time computation.
