@@ -12,6 +12,7 @@
 * Normal size covid-19 südtirol chart (https://www.datawrapper.de/_/HWIBU/)
 
 # chart snapshots
+![Current covid-19 normalized averaged timeseries](https://github.com/christophmoar/covid-19/blob/master/image/4sti7-covid-19-normalized-averaged-timeseries?raw=true)
 ![Current covid-19 normalized](https://github.com/christophmoar/covid-19/blob/master/image/njNtn-covid-19-normalized.png?raw=true)
 ![Current covid-19 doubling time](https://github.com/christophmoar/covid-19/blob/master/image/Zojai-covid-19-doubling-time.png?raw=true)
 ![Current covid-19 südtirol](https://github.com/christophmoar/covid-19/blob/master/image/HWIBU-covid-19-s-dtirol.png?raw=true)
@@ -20,8 +21,9 @@
 * Current dataset (https://github.com/christophmoar/covid-19/blob/master/dataset-01/covid19-normalized.CSV)
 * Current dataset without date index and population headers (https://github.com/christophmoar/covid-19/blob/master/dataset-01/covid19-normalized-noheader.CSV)
 * Current südtirol dataset  (https://github.com/abaumg/covid19-bz-scraper/blob/master/data/covid19_bz.csv)
+* Current normalized averaged timeseries dataset (https://github.com/christophmoar/covid-19/blob/master/dataset-01/covid19-normalized-timeseries.CSV)
 
-## dataset description
+## normalized dataset description
 column name | description
 ----------- | -------------
 n|new cases

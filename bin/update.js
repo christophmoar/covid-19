@@ -5,7 +5,7 @@ const request = require('request')
 
 const text1 = 'Start date for each country has been chosen so that each country starts with a similar group of base cases. This makes evolution of the graph comparable. For chosen dates have a look at the dataset, IT/2020-02-22, DE/2020-03-01, ES/2020-02-29, IE/2020-03-04, KR/2020-02-19, UK/2020-03-01, SE/2020-02-27, ST/2020-02-27, AT/2020-02-29, CH/2020-02-27, US/2020-03-07.'
 const text2 = 'Please also note that comparing total recorded case numbers might be misleading, since they do not account for unreported/undetected cases (dark numbers). This factor is likely different in each country, due to the different testing policies. Comparing slope changes - and not total figures - is the main point in this chart.'
-
+const text3 = 'This charts the new confirmed cases of covid-19 vs. the total confirmed cases to date, normalized to an identical population of 60.3 millions, on both logarithmic scales. When plotted in this way, exponential growth is represented as a straight line that slopes upwards. Notice that almost all countries follow a very similar path of exponential growth. For this approach of visualization, check out details and interactive chart at aatishb.com/covidtrends.'
 const DW_TOKEN = process.env.DW_TOKEN
 
 async function updateurl(url, sourceurl, tmpfilename) {
@@ -87,18 +87,22 @@ function main() {
   update('https://api.datawrapper.de/v3/charts/njNtn/data', '../dataset-01/covid19-normalized-noheader.CSV')
   update('https://api.datawrapper.de/v3/charts/Zojai/data', '../dataset-01/covid19-normalized-noheader.CSV')
   updateurl('https://api.datawrapper.de/v3/charts/HWIBU/data', 'https://github.com/abaumg/covid19-bz-scraper/raw/master/data/covid19_bz.csv', '../dataset-01/covid19_bz.csv')
+  update('https://api.datawrapper.de/v3/charts/4sti7/data', '../dataset-01/covid19-normalized-timeseries.CSV')
   
   timestamp('https://api.datawrapper.de/v3/charts/njNtn', `${text1} ${text2}`)
   timestamp('https://api.datawrapper.de/v3/charts/Zojai', `${text1}`)
   timestamp('https://api.datawrapper.de/v3/charts/HWIBU', '')
+  timestamp('https://api.datawrapper.de/v3/charts/4sti7', `${text3}`)
   
   publish('https://api.datawrapper.de/charts/njNtn/publish')
   publish('https://api.datawrapper.de/charts/Zojai/publish')
   publish('https://api.datawrapper.de/charts/HWIBU/publish')
+  publish('https://api.datawrapper.de/charts/4sti7/publish')
   
   download('https://api.datawrapper.de/v3/charts/njNtn/export/png?unit=px&mode=rgb&plain=false&scale=2&borderWidth=40', '../image/njNtn-covid-19-normalized.png')
   download('https://api.datawrapper.de/v3/charts/Zojai/export/png?unit=px&mode=rgb&plain=false&scale=2&borderWidth=40', '../image/Zojai-covid-19-doubling-time.png')
   download('https://api.datawrapper.de/v3/charts/HWIBU/export/png?unit=px&mode=rgb&plain=false&scale=2&borderWidth=40', '../image/HWIBU-covid-19-s-dtirol.png')
+  download('https://api.datawrapper.de/v3/charts/4sti7/export/png?unit=px&mode=rgb&plain=false&scale=2&borderWidth=40', '../image/4sti7-covid-19-normalized-averaged-timeseries.png')
 }
 
 main()
