@@ -86,7 +86,7 @@ function main() {
 
   update('https://api.datawrapper.de/v3/charts/njNtn/data', '../dataset-01/covid19-normalized-noheader.CSV')
   update('https://api.datawrapper.de/v3/charts/Zojai/data', '../dataset-01/covid19-normalized-noheader.CSV')
-  updateurl('https://api.datawrapper.de/v3/charts/HWIBU/data', 'https://github.com/abaumg/covid19-bz-scraper/raw/master/data/covid19_bz.csv', '../dataset-01/covid19_bz.csv')
+  updateurl('https://api.datawrapper.de/v3/charts/HWIBU/data', 'https://github.com/abaumg/covid19-bz-scraper/raw/master/data/covid19_bz_detailed.csv', '../dataset-01/covid19_bz_detailed.csv')
   update('https://api.datawrapper.de/v3/charts/4sti7/data', '../dataset-01/covid19-normalized-timeseries.CSV')
   
   timestamp('https://api.datawrapper.de/v3/charts/njNtn', `${text1} ${text2}`)
