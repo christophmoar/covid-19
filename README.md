@@ -26,7 +26,7 @@
 # datasets
 * Current dataset (https://github.com/christophmoar/covid-19/blob/master/dataset-01/covid19-normalized.CSV)
 * Current dataset without date index and population headers (https://github.com/christophmoar/covid-19/blob/master/dataset-01/covid19-normalized-noheader.CSV)
-* Current südtirol dataset  (https://github.com/abaumg/covid19-bz-scraper/blob/master/data/covid19_bz.csv)
+* Current südtirol dataset  (https://github.com/christophmoar/covid-19/blob/master/dataset-01/covid19_bz.csv)
 * Current normalized averaged timeseries dataset (https://github.com/christophmoar/covid-19/blob/master/dataset-01/covid19-normalized-timeseries.CSV)
 
 ## normalized dataset description
