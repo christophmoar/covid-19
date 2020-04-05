@@ -6,6 +6,7 @@ const request = require('request')
 const text1 = 'Start date for each country has been chosen so that each country starts with a similar group of base cases. This makes evolution of the graph comparable. For chosen dates have a look at the dataset, IT/2020-02-22, DE/2020-03-01, ES/2020-02-29, IE/2020-03-04, KR/2020-02-19, UK/2020-03-01, SE/2020-02-27, ST/2020-02-27, AT/2020-02-29, CH/2020-02-27, US/2020-03-07.'
 const text2 = 'Please also note that comparing total recorded case numbers might be misleading, since they do not account for unreported/undetected cases (dark numbers). This factor is likely different in each country, due to the different testing policies. Comparing slope changes - and not total figures - is the main point in this chart.'
 const text3 = 'This charts the new confirmed cases (nx_avg) of covid-19 vs. the total confirmed cases (tx) to date, normalized to an identical population of 60.3 millions, both on logarithmic scales. When plotted in this way, exponential growth is represented as a straight line that slopes upwards. Notice that almost all countries follow a very similar path of exponential growth. For this approach of visualization, check out details and interactive chart at aatishb.com/covidtrends.'
+const text4 = 'Die grüne Linie stellt das Verhältnis zwischen den täglichen neuen Fällen (newPositiveTested) und den neu getesteten Personen (newNumberTestedPeople) in Prozent dar, es wird ein gleitender Durchschnitt über vier Tage angewendet. Unter der Annahme unveränderter Testvorgaben (=wer wird getestet) dient diese Darstellung zur Einschätzung wieviel Prozent der neu Getesteten positiv sind. Anders formuliert, man beobachtet dabei relative und nicht absolute Zahlen. Die absoluten Werte unterliegen naturgemäß deutlichen Schwankungen und beinhalten auch die Tests, die an den wieder an Gesundeten ausgeführten werden.'
 const DW_TOKEN = process.env.DW_TOKEN
 
 async function updateurl(url, sourceurl, tmpfilename) {
@@ -92,7 +93,7 @@ function main() {
   
   timestamp('https://api.datawrapper.de/v3/charts/njNtn', `${text1} ${text2}`)
   timestamp('https://api.datawrapper.de/v3/charts/Zojai', `${text1}`)
-  timestamp('https://api.datawrapper.de/v3/charts/HWIBU', '')
+  timestamp('https://api.datawrapper.de/v3/charts/HWIBU', `${text4}`)
   timestamp('https://api.datawrapper.de/v3/charts/4sti7', `${text3}`)
   
   publish('https://api.datawrapper.de/charts/njNtn/publish')
