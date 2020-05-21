@@ -13,6 +13,11 @@
 * Normal interactive(https://www.datawrapper.de/_/njNtn/)
 ![Current covid-19 normalized](https://github.com/christophmoar/covid-19/blob/master/image/njNtn-covid-19-normalized.png?raw=true)
 
+## incidence per week
+* Fullscreen interactive (https://datawrapper.dwcdn.net/1Cdh3/)
+* Normal size interactive (https://www.datawrapper.de/_/1Cdh3/)
+![Current covid-19 incidence per week](https://github.com/christophmoar/covid-19/blob/master/image/1Cdh3-covid-19-incidence-per-week.png?raw=true)
+
 ## doubling time
 * Fullscreen interactive (https://datawrapper.dwcdn.net/Zojai/)
 * Normal size interactive (https://www.datawrapper.de/_/Zojai/)
@@ -38,5 +43,6 @@ nx|new cases, normalized to population=60.3m
 tx|total cases, normalized to population=60.3m
 q|daily growth rate: q=1+p/100
 td|doubling time in days: td=ln(2)/ln(q)
+in|sum of new cases per last seven days over 100.000 population
 
 To smooth out  single day spikes in testing and case numbers, we currently use a six-day averaging of the daily growth rate in the doubling time computation.
