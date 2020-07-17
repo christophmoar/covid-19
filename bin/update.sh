@@ -7,7 +7,7 @@
 ## get data from simedia
 ##rm -f ../dataset-01/covid19_bz_detailed.csv
 ##rm -f ../dataset-01/covid19_bz_detailed.json
-##wget -c "http://api.corona-bz.simedia.cloud/?format=json" -O ../dataset-01/covid19_bz_detailed.json
+##wget -c "https://api.corona-bz.simedia.cloud/?format=json" -O ../dataset-01/covid19_bz_detailed.json
 ##python3 json_to_csv.py ../dataset-01/covid19_bz_detailed.json ../dataset-01/covid19_bz_detailed.csv
 ##rm -f ../dataset-01/covid19_bz_detailed.json
 
